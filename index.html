@@ -20,7 +20,7 @@
 	</script>
 
 	<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7mMK9h9fcbKVa9_a8BZh9rf_xbJ_juj0&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7mMK9h9fcbKVa9_a8BZh9rf_xbJ_juj0&callback=initialize">
   	</script>
 
 	<!--STYLES-->
@@ -34,9 +34,11 @@
 	<!--BEGIN HEADER-->
 	<div class="container">	
 		<div class="page-header">
+                  <div id="headertext">
   			<h1>Team 4511
   				<br>
   				<small>Providence Academy's <i>FIRST Robotics</i> Team</small></h1>
+                  </div>
 		</div>
 	</div>
 	<!--END HEADER-->
@@ -87,13 +89,22 @@
 	<!--END MAP-->
 
 	<!--BEGIN CONTENT-->
-	<h3>About Us</h3>
-	<p>Here is some text. Here is even more text. Wow. What a bunch of text this is. I probably could have just used lorem ipsum here, but I figured I could type out some random stuff as a placeholder instead. What a great idea that was.</p>
-	<img src="https://placeholdit.imgix.net/~text?txtsize=52&txt=550%C3%97350&w=550&h=350" style="float:left">
+        <div class="container" id="abouttext">
+	  <h3>About Us</h3>
+	  <p class="abouttext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non pulvinar lectus, at euismod libero. Cras ut rutrum nunc, eget scelerisque enim. Vestibulum pellentesque arcu fermentum velit euismod tempor. Nam id justo vehicula, cursus sapien malesuada, porttitor tortor. Donec vehicula felis nec efficitur vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec rutrum congue est, vitae dapibus tellus consectetur a. Nulla vitae fermentum massa. Integer efficitur velit volutpat metus bibendum, eu maximus leo pulvinar. Quisque scelerisque, eros sed viverra gravida, libero purus imperdiet ex, eget aliquam nisi orci vel nunc. Maecenas tristique tristique tellus, eu pellentesque nisl laoreet ut. Curabitur ut dapibus elit. Proin sed diam auctor, mollis magna in, auctor ligula. Integer consequat eros dolor, at ultricies urna convallis sit amet.</p>
+	</div>
+	<div class="container" id="aboutimage">
+          <div class="img-responsive">
+            <img id="aboutimage" src="https://placeholdit.imgix.net/~text?txtsize=52&txt=550%C3%97350&w=550&h=350">
+	  </div>
+        </div>
+        <br>
 	<!--YOUTUBE PLAYER-->	
 	<div class="container">
 		<div class="embed-responsive embed-responsive-16by9">
+                  <div class="player">
 	  		<iframe class="embed-responsive-item" width="220" height="158" src="https://www.youtube.com/embed/DLzxrzFCyOs" allowfullscreen></iframe>
+                  </div>
 	  	</div>
 	</div>
 	<!--END CONTENT-->

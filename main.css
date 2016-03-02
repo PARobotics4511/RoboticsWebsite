@@ -5,11 +5,26 @@ html, body {
 }
 
 #map{
-	height:30%;
-	width:100%;
+  height:30%;
+  width:100%;
+}
+
+#headertext{
+  text-align:center;
 }
 
 .carousel-inner img {
   margin: auto;
 }
 
+.aboutimage{
+  float:right;
+}
+
+.abouttext{
+  float:left;
+}
+
+.player{
+  clear:both;
+}
