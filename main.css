@@ -18,14 +18,14 @@ html, body {
   margin: auto;
 }
 
-.aboutimage{
-  float:right;
-  position:center;
+/*#aboutimage{
+  display:inline-block;
+  vertical-align:middle;
 }
 
 .abouttext{
   float:left;
-}
+}*/
 
 .player{
   width:40%;
@@ -33,3 +33,6 @@ html, body {
   clear:both;
 }
 
+#videos{
+
+}
