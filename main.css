@@ -2,6 +2,7 @@ html, body {
  height: 100%; 
  margin: 0; 
  padding: 0; 
+ font-family:'Raleway';
 }
 
 #map{
@@ -19,6 +20,7 @@ html, body {
 
 .aboutimage{
   float:right;
+  position:center;
 }
 
 .abouttext{
@@ -26,5 +28,8 @@ html, body {
 }
 
 .player{
+  width:40%;
+  height:30%;
   clear:both;
 }
+

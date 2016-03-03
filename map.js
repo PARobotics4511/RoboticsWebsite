@@ -1,6 +1,6 @@
   function initialize() {
         var mapOptions = {
-          zoom: 18,
+          zoom: 19,
           center: new google.maps.LatLng(45.045179, -93.471339),
           mapTypeId: google.maps.MapTypeId.SATELLITE
         };
@@ -29,3 +29,5 @@
   //trigger the resize-event to initialize the size and _center-values
   google.maps.event.trigger(map,'center_changed',{});
 }
+
+ 
