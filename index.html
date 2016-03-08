@@ -11,13 +11,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="map.js"></script>
-	<script src="jquery.fitvids.js"></script>
-	<!--<script>
-	  $(document).ready(function(){
-	    // Target your .container, .wrapper, .post, etc.
-	    $("#videos").fitVids();
-	  });
-	</script>-->
+	<!--<script src="jquery.mobile-1.4.5.min.js"></script>-->
 
 	<script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7mMK9h9fcbKVa9_a8BZh9rf_xbJ_juj0&callback=initialize">
@@ -26,7 +20,18 @@
 	<!--STYLES-->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
-        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+    <!--<script>  
+	$(document).ready(function() {  
+	   $("#myCarousel").swiperight(function() {  
+	      $("#myCarousel").carousel('prev');  
+	    });  
+	   $("#myCarousel").swipeleft(function() {  
+	      $("#myCarousel").carousel('next');  
+	   });  
+	});  
+	</script>-->  
 </head>
 <!--END HEAD-->
 
@@ -35,11 +40,12 @@
 	<!--BEGIN HEADER-->
 	<div class="container">	
 		<div class="page-header">
-                  <div id="headertext">
-  			<h1>Team 4511
+                  <div id="headertext" style="clear:both;display:inline-block;">
+  			<h1 style="text-align:center;">Team 4511
   				<br>
   				<small>Providence Academy's <i>FIRST Robotics</i> Team</small></h1>
                   </div>
+                <img style="float:right;display:inline-block;" height="200px" width="200px" class="img-responsive" src="assets/LOGO.png"/>
 		</div>
 	</div>
 	<!--END HEADER-->
@@ -121,33 +127,27 @@
 	<!--END CONTENT-->
 	<!--SPONSOR BANNER-->
 	<div class="jumbotron">
-		<h1 style="text-align:center;margin-bottom:1em;">Our Sponsors</h1>
+		<h1 style="text-align:center;margin-bottom:1em;color:#D18C2A;">Our Sponsors</h1>
 		<div class="container">
     <div class="row">
         <div class="col-md-6">
-            <img src="http://placehold.it/1000x550" alt="test" class="img-responsive">
-            <div class="carousel-caption">
-              <h3>Providence Academy</h3>
-            </div>
+            <img src="assets/PA.png" alt="test" class="img-responsive">
          </div>
               <div class="col-md-6">
-            <img src="http://placehold.it/1000x550" alt="test" class="img-responsive">
-            <div class="carousel-caption">
-              <h3>Carlson Family Foundation</h3>
-            </div>
+            <img src="assets/carlson.png" alt="test" class="img-responsive">
          </div>
  </div>  
 </div>
 </div>
 	<div class="container">
-		<h2 style="text-align:center;">Interested in sponsoring us/want more information?</h2>
+		<h2 style="text-align:center;color:#D18C2A;">Interested in sponsoring us/want more information?</h2>
 		<a href="mailto:michael.plucinski@providenceacademy.org?Subject=Contact"><button type="button" class="btn btn-warning btn-lg btn-block">Contact Us</button></a>
 	</div>
 	<br>
 	<!--BEGIN FOOTER-->
 	<div class="footer">
-		<div style="margin-bottom:-20px;"class="jumbotron">
-			<a href="http://www.providenceacademy.org"><img class="img-responsive" style="float:left;display:inline-block;" width="100px" height="100px" src="palogo.gif"/>
+		<div class="jumbotron">
+			<a href="http://www.providenceacademy.org"><img class="img-responsive" style="float:left;display:inline-block;" width="100px" height="100px" src="assets/palogo.gif"/>
 			</a>
 			<p style="display:inline-block">Providence Academy<br>
 			15100 Schmidt Lake Road, Plymouth, MN 55446</p>

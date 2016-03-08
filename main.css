@@ -3,6 +3,23 @@ html, body {
  margin: 0; 
  padding: 0; 
  font-family:'Raleway';
+ background-color:#002B54;
+}
+
+h1{
+  color:#D18C2A;
+}
+
+p{
+ color:#D18C2A;
+}
+
+.jumbotron{
+  background-color:#002B54;
+}
+
+.footer{
+  background-color:#194065;
 }
 
 #map{
