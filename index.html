@@ -46,12 +46,12 @@
 	<script>
 	  $(function(){
 	      $("#headertext").typed({
-	        strings: ["Team 4511", "Providence Academy's FIRST Robotics Team"],
+	        strings: ["Team 4511", "Providence Academy's <i>FIRST Robotics</i> Team"],
 	        stringsElement: null,
             // typing speed
-            typeSpeed: 0,
+            typeSpeed: 4,
             // time before typing starts
-            startDelay: 0,
+            startDelay: 3000,
             // backspacing speed
             backSpeed: 0,
             // time before backspacing
@@ -59,7 +59,7 @@
             // loop
             loop: true,
             // false = infinite
-            loopCount: false,
+            loopCount: 1,
             // show cursor
             showCursor: true,
             // character for cursor
@@ -95,14 +95,15 @@
 <!--BEGIN BODY-->
 <body>
 	<!--BEGIN HEADER-->
+<div class="container-fixed">
 	<div class="container">	
 		<div class="page-header">
                   <div style="clear:both;display:inline-block;">
-  			<h1 id="headertext" style="text-align:center;display:inline-block;">Team 4511</h1><h1 style="display:inline-block;"><span class="typed-cursor">|</span></h1>
+  			<h1 id="headertext" style="text-align:center;display:inline-block;"></h1><h1 style="display:inline-block;"><span class="typed-cursor">|</span></h1>
   				<br>
   				<!--<h1><small>Providence Academy's <i>FIRST Robotics</i> Team</small></h1>-->
                   </div>
-                <img style="float:left;display:inline-block;" class="img-responsive" src="assets/LOGO.png"/>
+                <img style="float:left;display:inline-block;margin-bottom:5%;" class="img-responsive" src="assets/LOGO.png"/>
 		</div>
 	</div>
 	<!--END HEADER-->
@@ -149,7 +150,7 @@
 	<!--END CAROUSEL-->
 
 	<!--BEGIN MAP-->
-	<div id="map"></div>
+	<!--<div id="map"></div>-->
 	<!--END MAP-->
 
 	<!--BEGIN CONTENT-->
@@ -212,6 +213,7 @@
   			<p style="margin:2em; clear:both;">Copyright &copy;2016</p>
   		</div>
  	</div>
+</div>
 	<!--END FOOTER-->
 </body>
 <!--END BODY-->
