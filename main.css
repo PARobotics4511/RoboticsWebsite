@@ -2,12 +2,13 @@ html, body {
  height: 100%; 
  margin: 0; 
  padding: 0; 
- font-family:'Raleway';
+ font-family:'Ubuntu';
  background-color:#002B54;
 }
 
 h1{
   color:#D18C2A;
+  font-size:2em;
 }
 
 p{
@@ -24,7 +25,9 @@ p{
 
 #map{
   height:30%;
-  width:100%;
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 #headertext{
@@ -52,4 +55,26 @@ p{
 
 #videos{
 
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }

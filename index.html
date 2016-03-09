@@ -7,6 +7,26 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!--FAVICONS-->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="assets/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+	<link rel="manifest" href="assets/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+
 	<!--SCRIPTS-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -20,8 +40,45 @@
 	<!--STYLES-->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 
+    <script src="typed.js"></script>
+	<script>
+	  $(function(){
+	      $("#headertext").typed({
+	        strings: ["Team 4511", "Providence Academy's FIRST Robotics Team"],
+	        stringsElement: null,
+            // typing speed
+            typeSpeed: 0,
+            // time before typing starts
+            startDelay: 0,
+            // backspacing speed
+            backSpeed: 0,
+            // time before backspacing
+            backDelay: 500,
+            // loop
+            loop: true,
+            // false = infinite
+            loopCount: false,
+            // show cursor
+            showCursor: true,
+            // character for cursor
+            cursorChar: "|",
+            // attribute to type (null == text)
+            attr: null,
+            // either html or text
+            contentType: 'html',
+            // call when done callback function
+            callback: function() {},
+            // starting callback function before each string
+            preStringTyped: function() {},
+            //callback for every typed string
+            onStringTyped: function() {},
+            // callback for reset
+            resetCallback: function() {}
+	      });
+	  });
+	</script>
     <!--<script>  
 	$(document).ready(function() {  
 	   $("#myCarousel").swiperight(function() {  
@@ -40,12 +97,12 @@
 	<!--BEGIN HEADER-->
 	<div class="container">	
 		<div class="page-header">
-                  <div id="headertext" style="clear:both;display:inline-block;">
-  			<h1 style="text-align:center;">Team 4511
+                  <div style="clear:both;display:inline-block;">
+  			<h1 id="headertext" style="text-align:center;display:inline-block;">Team 4511</h1><h1 style="display:inline-block;"><span class="typed-cursor">|</span></h1>
   				<br>
-  				<small>Providence Academy's <i>FIRST Robotics</i> Team</small></h1>
+  				<!--<h1><small>Providence Academy's <i>FIRST Robotics</i> Team</small></h1>-->
                   </div>
-                <img style="float:right;display:inline-block;" height="200px" width="200px" class="img-responsive" src="assets/LOGO.png"/>
+                <img style="float:left;display:inline-block;" class="img-responsive" src="assets/LOGO.png"/>
 		</div>
 	</div>
 	<!--END HEADER-->
